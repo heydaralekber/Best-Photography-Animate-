@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>Best Photography</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">    
+    <link rel="stylesheet" href="css/animate.min.css">    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
    <body>
@@ -22,7 +24,7 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
   <a href="#">Gallery</a>
-  <a href="#">About Me</a>
+  <a href="#">About</a>
   <a href="#">Contact</a>
   <a href="#">Blog</a>
   <a href="#">Pages</a>
@@ -85,16 +87,16 @@
 <div class="we-are">
   <div class="container">
 
-    <div class="title1 animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="100">We Are photo studio</div>
+    <div class="title1  wow fadeInUp" data-wow-delay="0.3s">We Are photo studio</div>
 
-    <div class="title2 animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="200">Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae dicta The hills Someday the mountain<br>might get sem but the law never will. Flying away on a wing and a prayer.
+    <div class="title2 wow fadeInUp" data-wow-delay="0.4">Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae dicta The hills Someday the mountain<br>might get sem but the law never will. Flying away on a wing and a prayer.
     </div>
 
     <br><br>
 
     <div class="row">
       <div class="col-sm-4">
-        <div class="thumb1 animated" data-animation="flipInY" data-animation-delay="200">
+        <div class="thumb1 wow flipInY" data-wow-delay="0.7s">
           <div class="thumbnail clearfix">
             <figure>
               <img src="images/home01.jpg" alt="" class="img-responsive">
@@ -107,7 +109,7 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="thumb1 animated" data-animation="flipInY" data-animation-delay="300">
+        <div class="thumb1 wow flipInY" data-wow-delay="0.7s">
           <div class="thumbnail clearfix">
             <figure>
               <img src="images/home02.jpg" alt="" class="img-responsive">
@@ -120,7 +122,7 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="thumb1 animated" data-animation="flipInY" data-animation-delay="400">
+        <div class="thumb1 wow flipInY" data-wow-delay="0.7s">
           <div class="thumbnail clearfix">
             <figure>
               <img src="images/home03.jpg" alt="" class="img-responsive">
@@ -134,6 +136,36 @@
       </div>
     </div>
 
+<div class="our-services" style="margin-top: 4%;">
+  <div class="container-fluid">
+
+    <div class="title1  wow fadeInUp" data-wow-delay="0.3s">OUR Services</div>
+
+    <div class="title2 text-left  wow fadeInUp" data-wow-delay="0.4s" style="margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed suscipit turpis. Morbi vehicula nisi vitae lectus varius luctus. Pellentesque nec purus sit amet urna maximus mollis id vitae ipsum. </div>
+
+    <br><br>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="services1 wow fadeInRight" data-wow-delay="0.4s" >
+          <img src="images/services1.png" alt="" class="img-responsive">
+          <div class="title3">Branding</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra luctus ultricies. Morbi felis odio, sollicitudin vel dapibus ut, feugiat id enim. Morbi mollis dui orci, in tincidunt nisi bibendum commodo. 
+          </p>
+        </div>
+
+        <div class="services1 wow fadeInRight" data-wow-delay="0.5s">
+          <img src="images/services2.png" alt="" class="img-responsive">
+          <div class="title3">PHOTOGRAPHY</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra luctus ultricies. Morbi felis odio, sollicitudin vel dapibus ut, feugiat id enim. Morbi mollis dui orci, in tincidunt nisi bibendum commodo.</p>
+        </div>
+      </div>
+    </div>
+
+
+
 
 
 
@@ -141,8 +173,21 @@
 </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>      
+
+
+  </div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>      
     <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
