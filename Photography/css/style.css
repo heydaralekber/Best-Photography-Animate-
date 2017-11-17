@@ -20,9 +20,116 @@ body {
     font: 16px/1.5 Amiri, Arial, Helvetica, sans-serif;
 }
 
+#ud_preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+#ud_preloader .ud_pre_half {
+  background: #111;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#ud_preloader #ud_bg_left {
+  left: 0;
+}
+
+#ud_preloader #ud_bg_right {
+  right: 0;
+}
+
+#ud_preloader #ud_dots {
+  z-index: 10001;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#ud_preloader #ud_dots .ud_dot {
+  animation: infinite 500ms ease-in-out;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#ud_preloader #ud_dots .ud_dot:last-child {
+  margin: 0 0 0 0;
+}
+
+@keyframes ud_preloader_1 {
+  0% {
+    background: #fff;
+    transform: translateY(0);
+  }
+  25% {
+    background: #3478e5; transform: translateY(-5px);
+  }
+  50% {
+    background: #fff;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ud_preloader_2 {
+  25% {
+    background: #fff;
+    transform: translateY(0);
+  }
+  50% {
+    background: #3478e5; transform: translateY(-5px);
+  }
+  75% {
+    background: #fff;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ud_preloader_3 {
+  50% {
+    background: #fff;
+    transform: translateY(0);
+  }
+  75% {
+    background: #3478e5; transform: translateY(-5px);
+  }
+  100% {
+    background: #fff;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ud_preloader_4 {
+  75% {
+    background: #fff;
+    transform: translateY(0);
+  }
+  100% {
+    background: #3478e5; transform: translateY(-5px);
+  }
+  25% {
+    background: #fff;
+    transform: translateY(0);
+  }
+}
+
 .sidenav {  
-    height: 100%;
-    width: 0;
+    height: 100%; 
+    width: 0;   
     position: fixed;
     z-index: 1;
     top: 0;
@@ -33,57 +140,30 @@ body {
     transition: 0.5s;
 }
 
-.navbar_ .nav > li {
+.navbar-nav {
+margin-top: 15%;
+}
+
+.navbar-nav li {
     position: relative;
-    display: block;
+    display: block;    
     float: none;
     white-space: nowrap;
     background: none;
-    padding: 0 50px;
+    padding: 3px 20px;
 }
 
-.navbar_ .nav > li > a span {
-    display: inline;
-}
-
-.navbar_ .nav > li > a {
+.nav>li>a {
+    position: relative;
     display: block;
-    text-decoration: none;
+    padding: 15px 0px;
+}
+
+.navbar-nav li a:hover {
     background: none;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 50px;
-    color: #cccccc;
-    text-shadow: none;
-    padding: 0;
-    border: none;
-    margin: 0;
-    text-align: left;
-    text-transform: uppercase;
-    border-top: 1px dotted #929292;
-    letter-spacing: 3px;
-    position: static;
-    transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-}
-
-/*.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
     color: #818181;
-    display: block;
     transition: 0.3s;
-    font-family: 'Montserrat', sans-serif;
-}*/
-
-
-/*.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}*/
+}
 
 .sidenav .closebtn {
     position: absolute;
@@ -92,12 +172,6 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
